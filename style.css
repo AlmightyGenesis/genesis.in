@@ -5003,7 +5003,7 @@ grid-template-columns:1fr;
     .get-in-touch-section {
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 10px;
     }
 
     .contact-left,
@@ -5020,7 +5020,7 @@ grid-template-columns:1fr;
     }
 
     h1{
-        font-size: 25px;
+        font-size: 20px;
     }
 
     h2{
@@ -5032,7 +5032,7 @@ grid-template-columns:1fr;
     }
 
     p{
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.7;
     }
 
@@ -5069,7 +5069,7 @@ and (orientation: landscape) {
 
     .contact-box {
         display: flex;
-        gap: 15px;
+        gap: 20px;
     }
 
     .contact-left,
@@ -5078,7 +5078,7 @@ and (orientation: landscape) {
     }
 
     #companyMap {
-        height: 200px;
+        height: 150px;
     }
 
     .mini-footer {
@@ -5093,22 +5093,22 @@ and (orientation: landscape) {
     .content-hero-text {
         width: 70%;
         margin: auto;
-        padding-top: 120px;
+        padding-top: 70px;
     }
 
     .content-hero-text h1 {
-        font-size: 32px !important;
+        font-size: 25px !important;
         line-height: 1.2;
         word-break: break-word;
     }
 
     .content-hero-text p {
-        font-size: 12px;
+        font-size: 10px;
         line-height: 1.6;
     }
 
    .content-detail-box {
-    margin-top: 50px !important;
+    margin-top: 40px !important;
     width: 75% !important;
     margin-left: auto;
     margin-right: auto;
@@ -5119,21 +5119,21 @@ and (orientation: landscape) {
 @media (max-width:632px) and (orientation:landscape)
 {
     .content-hero {
-        min-height: 100vh;
+        min-height: 70vh;
     }
 
     .content-hero-text {
-        padding-top: 80px;
+        padding-top: 70px;
     }
 
     .content-hero-text h1 {
-        font-size: 30px !important;
+        font-size: 25px !important;
     }
 
     .content-detail-box {
-        margin-top: 50px !important;
+        margin-top: 40px !important;
         position: relative;
-        z-index: 5;
+        z-index: 2;
     }
 }
 

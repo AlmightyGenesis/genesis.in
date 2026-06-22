@@ -330,6 +330,7 @@ function openPage (type) {
 
     break;
 
+
     /* BUSINESS COLLABORATION */    
    case "collaboration":
 
@@ -350,6 +351,7 @@ function openPage (type) {
    window.location.hash = "BusinessCollaboration";
 
    break;
+
 
    /* TRAINING AND SUPPORT */
    case "training":
@@ -443,7 +445,7 @@ function openPage (type) {
 
     title="Flexible Work";
 
-    question="Work Without Limits";
+    question="Work Without Limits \n\Your Career, \n\Your Schedule, \n\Your Choice.";
 
     detailHeading="Freedom To Work. Power To Grow.";
 

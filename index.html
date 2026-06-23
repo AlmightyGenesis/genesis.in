@@ -1,0 +1,2009 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <title>ALMIGHTY GENESIS</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    </head>
+    <body>
+
+        <div class="particles"></div>
+
+        <!--NAVBAR-->
+
+        <nav id="navbar">
+
+            <!-- COMPANY LOGO -->
+            <div class="company">
+
+                <img src="logo.jpeg" class="logo-img" alt="Almighty Genesis" style="width:150px; display: flex; margin: 0 auto 10px;">
+
+                <span class="Company-name"></span>
+                <span style="color:white;">ALMIGHTY</span>
+                <span style="color:white;">GENESIS</span>
+
+            </div>
+
+            <!-- MENU -->
+
+            <ul class="menu">
+
+                <!-- HOME -->
+
+                <li onclick="goHome()">Home</li>
+
+                <!-- ABOUT US -->
+
+                <li class="dropdown">
+
+                    About Us
+
+                    <ul class="dropdown-content">
+
+                        <li onclick="openPage('overview')">
+                           Company Overview
+                        </li>
+
+                        <li class="submenu">
+
+                            Our Aspiration
+
+                            <ul class="submenu-content">
+
+                                <li onclick="openPage('mission')">
+                                    Our Mission
+                                </li>
+
+                                <li onclick="openPage('vision')">
+                                    Our Vision
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+                        <li onclick="openPage('why')">
+                           Why Choose Us
+                        </li>
+
+                         <li onclick="openPage('industry')">
+                           Industries We Serve
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- SERVICES -->
+
+                <li class="dropdown">
+
+                    Services
+
+                    <ul class="dropdown-content">
+
+                        <!-- WEB DEVELOPMENT -->
+
+                        <li onclick="openPage('lead')">
+                            Lead Generation & Sales Support
+                        </li>
+
+                       
+                        <li onclick="openPage('enterprise')">
+                            Enterprise Management
+                        </li>
+
+
+                        <li onclick="openPage('customer')">
+                            Customer First 
+                        </li>
+
+
+                        <li onclick="openPage('inbond')">
+                            Consulting Services
+                        </li>
+
+                    </ul>
+
+                </li>
+
+
+                <!-- BUSINESS OPPORTUNITIES -->
+
+                <li class="dropdown">
+                    Business Opportunities
+                    <ul class="dropdown-content">
+
+                       <li onclick="openPage('collaboration')">
+                           Business Collaboration
+                        </li>
+
+                        <li onclick="openPage('training')">
+                           Training & Support
+                        </li>
+
+                    </ul>
+
+                </li>
+
+               <!--BUSINESS MODEL-->
+               <li onclick="openBusinessModel()"> Business Model </li>
+
+                <!--CAREERS-->
+                <li class="dropdown">
+                    Careers
+
+                    <ul class="dropdown-content">
+
+                        <li onclick="openPage('work')">
+                            Work
+                        </li>
+
+                        <li onclick="openPage('internship')">
+
+                            Internship Program
+
+                        </li>
+
+                        <li onclick="openPage('life')">
+
+                            Life At Almighty Genesis
+
+                        </li>
+
+                        <li onclick="openPage('Flexible')">
+
+                           Flexible Work
+
+                        </li>
+
+                        <li onclick="openPage('learning')">
+
+                            Learning And Development
+
+                        </li>
+
+                        <li onclick="openPage('recruitment')">
+
+                            Recruitment Process
+
+                        </li>
+                        
+                    </ul>
+                </li>
+
+                <!-- CONTACT -->
+
+                <li onclick="openContact()"> Contact </li>
+       
+            </ul>
+
+        </nav>
+
+        <!--HERO-->
+        <div id="mainHomePage">
+            <section id="home" class="active hero">
+
+                <!--BACKGROUND VIDEO-->
+                <video autoplay muted loop playsinline class="bg-video">
+                <source src="background.mp4" type="video/mp4">
+                </video>
+
+                <!--DARK OVERLAY-->
+                <div class="overlay"></div>
+
+                <!--HERO CONTENT-->
+                <div class="hero-content">
+        
+                    <h1> WELCOME TO THE <br>
+                    WORLD OF<br>
+                    OPPORTUNITIES</h1>
+
+                </div>
+            </section>
+
+            <!--HOME CONTENT WRAPPER-->
+            <div class="home-scroll-content">
+
+                <!--HOME GLASS CONTENT SECTION-->
+                <div class="home-heading scroll-box">
+                    <h1> Portfolio</h1>
+                    <h2> SHAPING THE FUTURE</h2>
+                    
+                    <p>
+                        We combine technology, skilled talent, and process excellence to deliver high-quality solutions that support business growth in a competitive global market.
+                    </p>
+                </div>
+
+                <!--IMAGES SECTION-->
+                <div class="portfolio-images">
+                    <img class="scroll-img" src="image1.jpg" alt="">
+                    <img class="scroll-img" src="image2.jpg" alt="">
+                    <img class="scroll-img" src="image3.jpg" alt="">
+                    <img class="scroll-img" src="image4.jpg" alt="">
+                </div>  
+
+                <!--OUR INSIGHTS-->
+                <div class="home-heading scroll-box">
+                    <h1> Our Insights</h1>
+                    <p> 
+                        Markets, technology, and talent don't stand still. We track shifts early, separate signal from noise, and turn data into decisions. Our insights come doing the work — not just watching it.
+                    </p>
+                </div>
+
+                <!--BOOK APPOINTMENT BUTTON-->
+                <div class="appointment-btn">
+                    <button onclick="openContact()"> 
+                        BOOK APPOINTMENT
+                    </button>
+                </div>
+
+    
+                <!-- FOOTER SECTION-->
+
+                <footer class="footer">
+
+                    <!--COMPANY LOGO-->
+
+                    <div class="footer-logo">
+            
+                        <img src="logo.png" alt="Company Logo" alt="Almighty Genesis" style="width:150px; display: flex; margin: 0 auto 10px;">
+                        <h2>
+                            <span class="almighty" style="color:#007BFF;">ALMIGHTY</span>
+                            <span class="genesis" style="color:#C2188F;">GENESIS</span>
+                        </h2>
+
+                        <p>
+                           MAKING IMPOSSIBLE, POSSIBLE...!
+                        </p>
+                    </div>
+
+
+                    <!-- SOCIAL MEDIA -->
+
+                    <div class="footer-social">
+
+                        <h3>Follow Us</h3>
+
+                        <div class="social-icons">
+
+                            <a href="#">
+                              <img src="img1.jpg" alt="">
+                            </a>
+
+                            <a href="#">
+                              <img src="img2.jpg" alt="">
+                            </a>
+
+                            <a href="#">
+                              <img src="img3.jpg" alt="">
+                            </a>
+
+                            <a href="#">
+                              <img src="img4.jpg" alt="">
+                            </a>
+
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>
+                            © 2026 Almighty Genesis. All Rights Reserved.
+                        </p>
+                    </div>
+                </footer> 
+            </div>
+        </div>
+
+        <!--ABOUT-->
+        <section id="aboutMenu" class="panel">
+            <ul>
+                <li onclick="openPage('overview')">. Company Overview</li>
+                <li onclick="openPage('mission')">. Our Mission</li>
+                <li onclick="openPage('services')">. Our Services</li>
+                <li onclick="openPage('values')">. values</li>
+                <li onclick="openPage('leadership')">. Leadership</li>
+            </ul>
+        </section>
+
+        <!--SERVICES-->
+        <section id="servicesMenu" class="panel">
+            <ul>
+                <li onclick="openPage('web')">. Web Development</li>
+                <li onclick="openPage('hosting')">. Web Hosting</li>
+                <li onclick="openPage('software')">. Software Development</li>
+                <li onclick="openPage('insurance')">. Insurance</li>
+                <li onclick="openPage('loans')">. Loans</li>
+            </ul>
+        </section>
+
+        <!--BUSINESS MODEL-->
+        <section id="businessMenu" class="panel">
+            <ul>
+               <li onclick="showMenu('franchiseMenu')">. Franchise</li>
+               <li onclick="showMenu('opportunitySubMenu')">. Business Opportunity</li>
+            </ul>
+        </section>
+
+        <!--FRANCHISE-->
+        <section id="franchiseMenu" class="panel">
+            <ul>
+                <li onclick="openPage('brand')">. Brand Overview</li>
+                <li onclick="openPage('why')">. Why Choose</li>
+                <li onclick="openPage('fee')">. Fee Structure</li>
+                <li onclick="openPage('training')">. Training & Support</li>
+                <li onclick="openPage('marketing')">. Marketing Assistance</li>
+            </ul>
+        </section>
+
+        <!--BUSINESS OPPORTUNITIES-->
+        <section id="opportunitySubMenu" class="panel">
+            <ul>
+                <li onclick="openPage('partnership')">. Partnership</li>
+                <li onclick="openPage('work')">. Work With Us</li>
+                <li onclick="openPage('startup')">. StartUp Collaboration</li>
+                <li onclick="openPage('b2b')">. B2B Services</li>
+            </ul>
+        </section>
+
+        <!--CAREERS-->
+        <section id="careersMenu" class="panel">
+            <ul>
+                <li onclick="openPage('wfh')">Work From Home</li>
+                <li onclick="openPage('wio')">. Work In Office</li>
+                <li onclick="openPage('apply')">. Apply For Job</li>
+                <li onclick="openPage('contact')">. Contact</li>
+            </ul>
+        </section>
+
+        <!--CONTENT PAGE-->
+        <section id="contentPage" class="content-page">
+
+            <!--VIDEO HERO SECTION-->
+            <div class="content-hero">
+
+                <!--COMPANY OVERVIEW-->
+                <video autoplay muted loop playsinline class="content-video" id="contentVideo">
+                    <source id="videoSource" src="" type="video/mp4">
+                </video>
+                <!--DARK OVERLAY-->
+                <div class="overlay"></div>
+
+                <!--HERO TEXT-->
+                <div class="content-hero-text">
+                    <h3 id="pageTitle"></h3>
+                    <h1 id="pageQuestion"></h1>
+                    <p id ="pageIntro"></p>
+                </div>
+            </div>
+
+            <div class="content-details">
+                <div class="content-text">
+                    <h2 id="detailTitle"></h2>
+                    <p id="detailText"></p> 
+                </div>
+            </div>
+
+            <!-- COMPANY OVERVIEW EXTRA -->
+            <div id="overviewNewSections" style="display:none;">
+
+                <section class="overview-business">
+
+                    <h1>Our Business</h1>
+
+                    <p>
+                        ❝ At Almighty Genesis, we provide comprehensive business support services designed to help organizations focus on their core competencies while we manage essential operational functions. 
+                        Our solutions are scalable, flexible, and tailored to meet the unique needs of businesses of all sizes. ❞
+                    </p>
+
+                </section>
+
+                <section class="overview-services">
+
+                    <h1>Our Key Service Areas</h1>
+
+                    <div class="service-list">
+
+                        <p>•	Business Process Outsourcing (BPO)</p>
+                        <p>•	Customer Service and Support</p>
+                        <p>•	Lead Generation and Appointment Setting</p>
+                        <p>•	Back-Office Administration</p>
+                        <p>•	Data Entry and Data Management</p>
+                        <p>•	Technical Support Services</p>
+                        <p>•	Recruitment and Staffing Support</p>
+                        <p>•	Business Operations Management</p>
+
+                    </div>
+
+                </section>
+
+
+                <section class="overview-what">
+
+                    <h1>What We Do...?</h1>
+
+                    <div class="overview-row">
+
+                        <div>
+
+                            <h2>Our Approach</h2>
+
+                            <p>
+
+                                We believe that every business is unique. That's why we work closely with our clients to understand their objectives, challenges, and growth plans. 
+                                By combining skilled professionals with modern technologies and proven processes, we create customized solutions that drive efficiency, productivity, and customer satisfaction.
+                            </p>
+
+                        </div>
+
+                        <div>
+
+                            <h2>Our Commitment</h2>
+
+                            <p>
+
+                                Our commitment is to deliver exceptional service, maintain the highest standards of professionalism, and build long-term partnerships based on trust, transparency, and performance. 
+                                We continuously invest in our people, processes, and technologies to ensure we remain responsive to the evolving needs of our clients.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+                <section class="overview-looking">
+
+                    <h1>Looking Ahead...!</h1>
+
+                    <p>
+
+                        As businesses continue to navigate an increasingly competitive and technology-driven marketplace, Almighty Genesis remains dedicated to helping organizations adapt, innovate, and grow. 
+                        Our goal is to be a trusted partner that empowers businesses with the solutions, expertise, and support needed to succeed in the future.
+                    </p>
+
+                </section>
+
+            </div>
+
+
+            <!-- MISSION BOXES -->
+            <div class="mission-section" id="missionBoxes">
+
+                <div class="mission-infinity-container">
+
+                    <!-- BOX 1 -->
+
+                    <div class="mission-box">
+
+                        <h2>Innovation</h2>
+
+                        <p>
+                            We focus on innovative ideas and modern solutions to build strong businesses.
+                        </p>
+
+                    </div>
+
+                    <!-- BOX 2 -->
+
+                    <div class="mission-box">
+
+                        <h2>Leadership</h2>
+
+                        <p>
+                            Our mission is to create confident leaders with entrepreneurial thinking.
+                        </p>
+
+                    </div>
+
+                    <!-- BOX 3 -->
+
+                    <div class="mission-box">
+
+                        <h2>Success</h2>
+
+                        <p>
+                           We help individuals achieve financial growth and long-term success.
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="misssion-image" alt="misssion-image">
+                    <img src="misssion.png">
+                </div>
+
+            </div>
+
+            <div class="mission-flow-section" id="missionFlow">
+
+                <div class="mission-flow-heading">
+                    <h1>Our Mission Process</h1>
+                </div>    
+
+                <div class="mission-container">
+
+                    <div class="flow-box">
+                        <h3>IDEA</h3>
+                        <p>Innovative business ideas and smart planning for future growth.</p>
+                    </div>
+
+                    <div class="flow-box">
+                        <h3>DEVELOP</h3>
+                        <p>Creating powerful digital and financial solutions with technology.</p>
+                    </div>
+
+                    <div class="flow-box">
+                        <h3>SUPPORT</h3>
+                        <p>Providing guidance, training, and professional business support.</p>
+                    </div>
+
+                    <div class="flow-box">
+                        <h3>SUCCESS</h3>
+                        <p>Helping entrepreneurs achieve <br>
+                        long-term business success.</p>
+                    </div>
+
+                    <div class="flow-box">
+                        <h3> INNOVATION </h3>
+                        <P> Driving smart solutions that help businesses grow and adapt to changing markets. </P>
+                    </div>
+
+                        <div class="flow-box">
+                            <h3> FOUNDATION OF SUCCESS</h3>
+                            <P>
+                                Enabling growth through integrity, innovation, and strategic execution.
+                            </P>
+                        </div>
+
+                    </div>
+
+                </div>
+            
+                <!-- VISION SECTION -->
+
+                <div class="vision-section" id="visionSection">
+
+                    <div class="vision-flow-section" id="visionFlow">
+
+                        <div class="vision-flow-heading">
+                            <h1>THE CREATIVE PROCESS</h1>
+                        </div>
+
+                        <div class="vision-box-flow">
+
+                            <div class="vision-step-box">
+                                <h2>STEP 1</h2>
+                                <h3>DEFINE</h3>
+                                <p>Understand the business goals.</p>
+                            </div>
+
+                            <div class="vision-step-box">
+                                <h2>STEP 2</h2>
+                                <h3>COLLECT</h3>
+                                <p>Gather information and ideas.</p>
+                            </div>
+
+                            <div class="vision-step-box">
+                                <h2>STEP 3</h2>
+                                <h3>ANALYZE</h3>
+                                <p>Create smart business strategies.</p>
+                            </div>
+
+                            <div class="vision-step-box">
+                                <h2>STEP 4</h2>
+                                <h3>DEVELOP</h3>
+                                <p>Build innovative digital solutions.</p>
+                            </div>
+
+                            <div class="vision-step-box">
+                                <h2>STEP 5</h2>
+                                <h3>PRESENT</h3>
+                                <p>Deliver professional solutions.</p>
+                            </div>
+
+                            <div class="vision-step-box">
+                                <h2>STEP 6</h2>
+                                <h3>IMPROVE</h3>
+                                <p>Continuously improve and grow.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <!-- WHY CHOOSE US SECTION -->
+
+                <div class="why-choose-section" id="whyChooseSection">
+
+                <!-- HEADING -->
+
+                <div class="choose-main-heading">
+                    <h1>What Sets Us APart</h1>
+                </div>
+
+                <div class="choose-container">
+
+                    <!-- RIGHT FAQ CONTENT -->
+
+                    <div class="choose-content">
+
+                        <!-- ITEM 1 -->
+
+                        <div class="choose-item">
+
+                            <div class="choose-question">
+                                <h2>Experienced Professionals</h2>
+                                <span>+</span>
+                            </div>
+
+                            <div class="choose-answer">
+                                <p>
+                                    • Our skilled workforce is trained to deliver consistent, high-quality service across multiple business functions.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- ITEM 2 -->
+
+                        <div class="choose-item">
+
+                            <div class="choose-question">
+                                <h2>Customized Solutions</h2>
+                                <span>+</span>
+                            </div>
+
+                            <div class="choose-answer">
+                                <p>
+                                   • We understand that every business is unique. Our services are tailored to align with your goals, processes, and growth strategy.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- ITEM 3 -->
+
+                        <div class="choose-item">
+
+                            <div class="choose-question">
+                                <h2>Cost Efficiency</h2>
+                                <span>+</span>
+                            </div>
+
+                            <div class="choose-answer">
+                                <p>
+                                    • We help organizations optimize resources and reduce operational expenses without compromising quality.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- ITEM 4 -->
+
+                        <div class="choose-item">
+
+                            <div class="choose-question">
+                                <h2>Technology-Driven Operations</h2>
+                                <span>+</span>
+                            </div>
+
+                            <div class="choose-answer">
+                                <p>
+                                  • We leverage modern tools, automation, and data-driven insights to improve performance and customer satisfaction.
+                                </p>   
+                            </div>
+
+                        </div>
+
+                        <!-- ITEM 5 -->
+
+                        <div class="choose-item">
+
+                            <div class="choose-question">
+                                <h2>Quality & Compliance</h2>
+                                <span>+</span>
+                            </div>
+
+                            <div class="choose-answer">
+                                <p>
+                                    • We maintain strict quality control standards and follow industry best practices to ensure accuracy, security, and compliance.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <!-- ITEM 6 -->
+
+                        <div class="choose-item">
+
+                            <div class="choose-question">
+                                <h2>24/7 Support</h2>
+                                <span>+</span>
+                            </div>
+
+                            <div class="choose-answer">
+                                <p>
+                                    • Our global delivery capabilities allow us to provide round-the-clock support to meet the needs of businesses and their customers
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div id="whyChooseContent" class="why-content-section">
+
+                <h2 class="why-main-heading">
+                    Business Success Together
+                </h2>
+
+                <div class="why-glass-box">
+                    <p>
+                       At  Almighty Genesis,<br>
+                        we believe that successful partnerships are built on trust, innovation, and shared goals. Our focus is on helping businesses operate more efficiently, 
+                        connect better with their customers, and achieve sustainable growth in an ever-evolving business environment.
+                    </p>
+
+               
+                    <div class="why-middle">
+
+                        <blockquote>
+
+                            Together, we create opportunities, drive innovation, and build a stronger future for businesses worldwide.
+
+                        </blockquote>
+
+                    </div>
+
+                </div>
+
+            </div>
+ 
+            <!--INDUSTRIES WE SERVE-->         
+            <div id="industryExtra" style="display:none;">
+
+                <section class="industry-section">
+
+                    <h1>Why Industry Knowledge Matters</h1>
+
+                    <div class="industry-points">
+
+                        <p>➬ Customized solutions tailored to specific business needs</p>
+
+                        <p>➬ Faster adaptation to industry trends and market changes</p>
+
+                        <p>➬ Improved operational efficiency and service quality</p>
+
+                        <p>➬ Enhanced customer satisfaction and business performance</p>
+
+                        <p>➬ Strategic support for sustainable growth and innovation</p>
+
+                    </div>
+
+                    <div class="industry-content">
+
+                        <p>
+
+                            At Almighty Genesis, we believe that true partnership begins with understanding. 
+                            That's why we work closely with our clients to deliver solutions that not only meet today's demands but also prepare them for tomorrow's opportunities.
+
+                        </p>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+            <!--LEAD GENERATION-->
+            <div id="leadContent" class="lead-main">
+
+                <h1 class="lead-heading">
+
+                    Lead Generation Services
+
+                </h1>
+
+                <div class="lead-grid">
+
+                    <div class="lead-card">B2B Lead Generation</div>
+
+                    <div class="lead-card">B2C Lead Generation</div>
+
+                    <div class="lead-card">Appointment Setting</div>
+ 
+                    <div class="lead-card">Prospect Research</div>
+
+                    <div class="lead-card">Database Building and Management</div>
+
+                    <div class="lead-card">Email and Telemarketing Campaigns</div>
+
+                    <div class="lead-card">Sales Pipeline Development</div>
+
+                    <div class="lead-card">Customer Qualification and Verification</div>
+
+                    <div class="lead-card">Market Research and Analysis</div>
+
+                </div>
+
+                <div class="lead-approach">
+
+                    <h2>Our Approach</h2>
+
+                    <p>
+
+                        We focus on understanding your ideal customer profile and identifying prospects who are most likely to benefit from your products or services. Our team uses proven strategies and modern tools to connect with decision-makers, 
+                        nurture relationships, and generate qualified opportunities that support your sales efforts.
+
+                    </p>
+
+                </div>
+
+                <div class="lead-why">
+
+                    <h2>
+
+                       Why Choose Almighty Genesis?
+
+                    </h2>
+
+                    <ul>
+
+                        <li>⁍ Targeted and qualified lead generation strategies</li>
+
+                        <li>⁍ Experienced sales and business development professionals</li>
+
+                        <li>⁍ Customized campaigns tailored to your industry</li>
+
+                        <li>⁍ Improved conversion rates and sales opportunities</li>
+
+                        <li>⁍ Scalable solutions for businesses of all sizes</li>
+
+                        <li>⁍ Transparent reporting and performance tracking</li>
+
+                    </ul>
+
+                </div>
+
+                <div class="lead-growth">
+
+                    <h2>
+
+                       Accelerate Your Business Growth
+
+                    </h2>
+
+                    <p>
+
+                        A strong pipeline of qualified leads is the foundation of successful sales and business expansion. At Almighty Genesis, we help businesses reach the right audience,
+                        create meaningful connections, and generate opportunities that drive revenue and long-term growth.
+
+                    </p>
+
+                </div>
+
+                <div class="lead-quote">
+
+                    <h1>
+
+                        ❝Partner with Almighty Genesis
+                        to build a stronger sales pipeline,
+                        increase customer acquisition,
+                        and unlock new business opportunities.❞
+
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <!--ENTERPRISE MANAGEMENT-->
+            <div id="enterpriseContent" class="enterprise-main">
+
+                <h1 class="enterprise-title">
+                    Our Enterprise Management Solutions
+
+                </h1>
+
+                <div class="enterprise-grid">
+
+                    <div class="enterprise-card">
+
+                        •	Business Process Outsourcing (BPO)
+
+                    </div>
+
+                    <div class="enterprise-card">
+
+                        •	Finance and Accounting Support
+
+
+                    </div>
+
+                    <div class="enterprise-card">
+
+                        •	Human Resource Services
+
+                    </div>
+
+                    <div class="enterprise-card">
+
+                        •	Customer Experience Management
+
+                    </div>
+
+                    <div class="enterprise-card">
+
+                        •	Back-Office Operations
+
+                    </div>
+
+                    <div class="enterprise-card">
+
+                        •	Data Management and Processing
+
+                    </div>
+
+                    <div class="enterprise-card">
+
+                        •	Process Optimization and Automation
+
+                    </div>
+
+                    <div class="enterprise-card">
+
+                        •	Digital Transformation Support
+
+
+                    </div>
+
+                </div>
+
+                <div class="enterprise-quote">
+
+                    <h2>
+
+                        "Creating Smarter Business Operations...!"
+
+                    </h2>
+
+                    <p> We help businesses modernize their operational framework by integrating technology, improving process efficiency, and implementing scalable solutions that support growth. Our approach focuses on reducing complexity, increasing productivity, and delivering measurable business value. <br>
+                        By aligning business operations with strategic objectives, we help organizations build resilient, flexible, and future-ready enterprises capable of responding to evolving customer expectations and industry changes. 
+                    </p>
+
+                </div>
+
+                <div class="enterprise-growth">
+
+                    <h1>
+
+                        Empowering the Modern Enterprise
+
+                    </h1>
+
+                    <p>
+
+                        At Almighty Genesis, we believe that successful businesses are built on efficient operations, empowered teams, and exceptional customer experiences. We partner with organizations to create smarter ways of working, helping them achieve operational excellence and sustainable growth.
+                    </p>
+
+                </div>
+
+                <div class="enterprise-end">
+
+                    <h1>
+
+                        Together, let's build a more agile, efficient, and future-ready enterprise.
+
+                    </h1>
+
+
+                </div>
+
+            </div>
+
+            <!--CUSTOMER FIRST-->
+            <div id="customerContent" class="customer-main">
+
+
+                <h1 class="customer-title">
+
+                    Our Customer-First Approach
+
+                </h1>
+
+                <div class="customer-grid">
+
+                    <div class="customer-card">
+	                    Understanding customer needs and expectations
+
+                    </div>
+
+                    <div class="customer-card">
+	                    Delivering personalized and consistent experiences
+                    </div>
+
+                    <div class="customer-card">
+	                    Leveraging data, analytics, and AI-driven insights
+                    </div>
+
+                    <div class="customer-card">
+	                   Improving customer engagement and satisfaction
+                    </div>
+
+                    <div class="customer-card">
+	                    Enhancing operational efficiency and service quality
+                    </div>
+
+                    <div class="customer-card">
+                        Building long-term customer loyalty and trust
+                    </div>
+
+                </div>
+
+                <div class="customer-growth">
+
+                    <h1>
+
+                        Creating Experiences That Drive Business Growth...!
+
+                    </h1>
+
+                    <p>
+
+                        At Almighty Genesis, we partner with businesses to reimagine customer journeys, optimize service delivery, and create experiences that inspire confidence and loyalty. We help organizations make informed decisions, embrace innovation, and develop practical strategies that align with their business goals and customer expectations. <br>
+                        By putting customers at the centre of every interaction, businesses can strengthen relationships, differentiate themselves in the marketplace, and create a foundation for long-term success.
+                    </p>
+
+                </div>
+
+                <div class="customer-end">
+
+                    <h1>
+
+                        "Together, we help you deliver smarter experiences, build stronger customer connections, and achieve sustainable growth in an evolving digital world."
+
+                    </h1>
+
+                </div>
+
+            </div>
+
+            <!--CONSULTING SERVICES-->
+            <div id="callCenterContent" class="call-main">
+
+                <div class="call-service-title">
+
+                    <h1>
+
+                        Our Expertise
+
+                    </h1>
+
+                </div>
+
+                <div class="call-service-box">
+
+                    <div>
+
+                        <h2>Our Consulting Expertise</h2>
+
+                        <p>
+
+                            Our consultants help businesses strengthen their operations, improve efficiency, and prepare for future growth through tailored advisory services.
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h2>Business Strategy Consulting</h2>
+
+                        <p>
+
+                            Developing growth strategies, improving business performance, and identifying opportunities for expansion and innovation.
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h2>Business Process Optimization</h2>
+
+                        <p>
+
+                            Analyzing existing workflows and implementing improvements that enhance productivity, reduce costs, and increase operational efficiency.
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h2>BPO and Operations Consulting</h2>
+
+                        <p>
+
+                            Helping organizations design, implement, and optimize outsourcing strategies that improve service delivery and business performance.
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h2>Customer Experience Consulting</h2>
+
+                        <p>
+
+                            Creating customer-centric strategies that enhance satisfaction, strengthen loyalty, and improve engagement across all touchpoints.
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h2>Workforce and Talent Consulting</h2>
+
+                        <p>
+
+                            Supporting organizations in workforce planning, talent acquisition strategies, employee development, and performance improvement initiatives.
+
+                        </p>
+
+                    </div>
+
+                    <div>
+
+                        <h2>Digital Transformation Consulting</h2>
+
+                        <p>
+
+                            Guiding businesses through the adoption of modern technologies, automation, and digital solutions that drive efficiency and competitiveness.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="call-feature">
+
+                    <h1>Our Approach</h1>
+
+                    <p> We believe successful consulting begins with understanding. Our team works collaboratively with clients to assess current challenges, evaluate opportunities, and develop customized solutions aligned with business objectives. </p>
+
+                    <h2> Our Consulting Process Includes.. </h2>
+
+                    <p>
+
+                        ✓ Business Assessment and Analysis	
+
+                        <br><br>
+
+                        ✓ Strategic Planning and Roadmap Development
+
+                        <br><br>
+
+                        ✓ Process Evaluation and Optimization
+
+                        <br><br>
+
+                        ✓ Performance Improvement Recommendations
+
+                        <br><br>
+
+                        ✓ Implementation Support
+
+                        <br><br>
+
+                        ✓ Continuous Monitoring and Improvement
+
+                    </p>
+
+                </div>
+
+                <div class="call-question">
+
+                    <h1>
+
+                       Why Choose Almighty Genesis?
+
+                    </h1>
+
+                    <p>
+
+                        ★ Experienced business and operational consultants	
+
+                        <br><br>
+
+                        ★ Industry-focused expertise and insights
+
+                        <br><br>
+
+                        ★ Customized and practical solutions
+
+                        <br><br>
+
+                       ★ Data-driven decision-making support
+
+                       <br><br>
+
+                       ★ Focus on measurable business outcomes
+                       <br><br>
+
+                       ★ Long-term partnership approach
+
+                    </p>
+
+                </div>
+
+                <div class="call-ending">
+
+                    <h1>
+
+                        Transforming Challanges Into Opportunities...!
+
+                    </h1>
+
+                    <p>
+
+                        At Almighty Genesis, we help businesses make smarter decisions, improve operational performance, and position themselves for long-term success. Whether you're looking to optimize processes, improve customer experiences, expand operations, or accelerate growth, our consulting services provide the expertise and guidance needed to achieve your goals.
+
+                    </p>
+
+                </div>
+
+                <div class="call-final">
+
+                    "Partner with Almighty Genesis to unlock new opportunities, overcome business challenges, and build a stronger future for your organization"
+
+                </div>
+
+            </div>
+
+            <!--BUSINESS COLLABORATION-->
+            <div id="businessContent" class="business-main">
+
+                <div class="business-middle">
+
+                    <h1>
+
+                        Our Collaborative Approach
+
+                    </h1>
+
+                    <div class="business-points">
+
+                       <div>•	Building strong and transparent partnerships</div>
+
+                       <div>•	Understanding unique business goals and challenges</div>
+
+                       <div>•	Sharing expertise and industry insights</div>
+
+                        <div>•	Leveraging technology to drive innovation and efficiency</div>
+
+                        <div>•	Enhancing operational performance and productivity</div>
+
+                        <div>•	Creating long-term value and sustainable growth</div>
+
+                    </div>
+
+                </div>
+
+                <div class="business-highlight">
+
+                    <h2>
+
+                        "Driving Success Through Strategic partnerships"
+
+                    </h2>
+
+                    <p>
+
+                        At Almighty Genesis, we work closely with our clients to identify opportunities, solve complex business challenges, and implement solutions that support their strategic objectives. Our collaborative approach ensures that every partnership is built on trust, communication, and a shared commitment to success.
+
+                    </p>
+
+                    <p>
+
+                        By fostering meaningful business relationships and encouraging innovation, organizations can strengthen their competitive advantage, improve operational outcomes, and unlock new opportunities for growth.
+
+                    </p>
+
+                </div>
+
+                <div class="business-last">
+
+                    <h1>
+
+                        "Together, we create powerful partnerships, drive innovation, and build a stronger future for businesses in an ever-evolving world."
+
+                    </h1>
+
+                </div>
+
+            </div>
+            
+            <!--TRAINING AND SUPPORT-->
+            <div id="trainingContent" class="training-main">
+
+                <div class="training-center">
+
+                    <h1> •	Delivering customized training programs tailored to business needs </h1>
+
+                    <ul>
+
+                        <li>•	Providing ongoing guidance and professional development opportunities </li>
+
+                        <li>•	Enhancing technical, operational, and customer service skills</li>
+
+                        <li>•	Supporting employees through continuous learning initiatives</li>
+
+                        <li>•	Leveraging modern tools and technologies for effective training</li>
+
+                        <li>•	Promoting knowledge sharing and performance improvement</li>
+
+
+                    </ul>
+
+                </div>
+
+                <div class="training-middle">
+
+                    <h2>
+
+                        ❝ Driving Growth Through Knowledge and Support ❞
+
+                    </h2>
+
+                    <p>
+
+                        At Almighty Genesis, we work closely with our clients to identify skill gaps, develop learning strategies, and implement training solutions that align with their business objectives. Our commitment to continuous support ensures that teams remain confident, capable, and prepared to meet evolving industry demands.
+
+                    </p>
+
+                    <p>
+                       By fostering a culture of learning and providing dependable support, organizations can improve employee performance, increase customer satisfaction, and achieve sustainable growth.
+                    </p>
+
+                </div>
+
+                <div class="training-end">
+
+                    <h2>
+
+                      Together, we empower people with the knowledge, skills, and support they need to succeed today and thrive in the future.
+
+                    </h2>
+
+                </div>
+
+            </div>
+
+
+            <!-- WORK -->
+
+            <div id="workExtraContent" style="display:none;">
+
+                <div class="work-container">
+
+                    <div class="work-intro">
+
+                        <h2>
+                            ❝ We didn't build Almighty Genesis to be just another company. We built it to be proof — that when you treat people right, invest in them genuinely, and lead with purpose, great things follow. That's true for the graduates we train. And it's equally true for every person on our team. ❞ <br> — Almighty Genesis, founding belief
+                        </h2>
+
+
+                    </div>
+
+                    <div class="work-line"></div>
+
+                    <div class="work-content">
+
+                        <h1> Why Almighty Genesis </h1>
+   
+                        <p>
+                            Most workplaces talk about culture. We build it — one honest conversation, one real opportunity, and one person at a time. When you work at Almighty Genesis, you're not just filling a role. You're part of a mission that has already changed over 4,000 lives since 2023 — and is only getting started.
+                        </p>
+
+                        <p>
+                            Our work touches the most important moment in a person's professional life — their first real job. That kind of responsibility shapes how we show up every day. It makes the work feel meaningful, because it genuinely is.
+                        </p>
+
+                    </div>
+
+                    <div class="work-cards">
+
+                        <div class="career-card">
+                            <h3>People-first, always</h3>
+                            <p>
+                                Every decision we make — internally and externally — starts with how it affects the person in front of us. That's not a policy. It's how we think.
+                            </p>
+                        </div>
+
+                        <div class="career-card">
+                            <h3>Growth is not optional</h3>
+                            <p>
+                                We train thousands to grow their careers. We apply that same energy to our own team. If you're not growing here, something is wrong — and we'll fix it.
+                            </p>
+                        </div>
+
+                        <div class="career-card">
+                            <h3>Purpose-driven work</h3>
+                            <p>
+                                Every role here connects directly to someone's life getting better. That's not a small thing. Every person on this team feels it — and it shows.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <div class="work-middle">
+
+                        <h2>What It Feels Like To Work Here</h2>
+
+                        <h3>
+                            Not a job.<br>
+                            A place you actually want to show up to.
+                        </h3>
+
+                        <p>
+                           We're a team that genuinely cares about the work — because the work genuinely matters. You'll be surrounded by people who are driven, but not ruthless. Ambitious, but not at each other's expense. Focused, but never too busy to help.
+                        </p>
+
+                        <blockquote>
+
+                            Focused,
+                            but never too busy to help.
+
+                        </blockquote>
+
+                    </div>
+
+                    <div class="work-bottom">
+
+                       <h2>Come Build Something That Matter</h2>
+
+                        <p>
+                            We're always looking for people who lead with heart and work with purpose.
+                        </p>
+
+                        <h3>Explore Open Roles</h3>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!--INTERNSHIP PROGRAM-->
+            <div id="internshipContent" class="internship-main">
+
+                <div class="intern-title">
+
+                    <h1>What You'll Actually Do...! </h1>
+
+                </div>
+
+                <div class="intern-cards">
+
+                    <div class="intern-card">
+
+                        <h3>Support Training Delivery</h3>
+
+                        <p>
+                            Work alongside our training team to help design, coordinate, and deliver programs that prepare graduates for employment. You'll understand what real skill-building looks like from the inside.
+                        </p>
+
+                    </div>
+
+                    <div class="intern-card">
+
+                        <h3>Track and manage learner progress</h3>
+
+                        <p>
+                            Monitor how trainees are developing, identify where additional support is needed, and help ensure every participant is moving forward. Real responsibility. Real impact
+                        </p>
+
+                    </div>
+
+                    <div class="intern-card">
+
+                        <h3>Contribute to content and curriculum</h3>
+
+                        <p>
+                            Help build training materials, assessments, and learning resources that are used by actual participants in our programs — not just filed away as intern projects.
+                        </p>
+
+                        </div>
+
+                        <div class="intern-card">
+
+                            <h3>Engage with graduates directly</h3>
+
+                            <p>
+                                Be part of the team that interacts with trainees — answering questions, offering guidance, and being the face of support that every participant needs during their journey.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="intern-section">
+
+                    <h2>
+                        Every month is a stepping stone,Not a waiting room.
+                    </h2>
+
+                    <p>
+
+                        We've structured the 6 months so that each phase builds on the last — giving you growing responsibility, deepening knowledge, and increasing confidence as you go.
+
+                    </p>
+
+                </div>
+
+                <div class="intern-guarantee">
+
+                    <h1>
+                        What The Guarantee Means...?
+                    </h1>
+
+                    <p>
+
+                        Every intern who completes our 6-month program and meets the standard we set together walks away with a confirmed job placement. Not a maybe. Not a "we'll see how things go." A real offer — backed by the same commitment we make to every person who comes through Almighty Genesis.
+
+                    </p>
+
+                </div>
+
+                <div class="intern-bigquote">
+
+                    <h1>
+
+                        We've placed over 4000 people
+                        into employment since 2023.
+
+                    </h1>
+
+                </div>
+
+                <div class="intern-end">
+
+                    <h2>
+
+                        Ready To Start Your
+                        Journey with
+                        Almighty Genesis...?
+
+                    </h2>
+
+                    <button class="apply-btn" onclick="openApplication()">
+
+                        APPLY NOW
+
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!--LIFE AT ALMIGHTY GENESIS-->
+            <section>
+            <div id="lifeContent" class="life-main"></div>
+            </section>
+
+
+            <!--FLEXIBLE WORK-->
+            <section>
+            <div id="flexibleContent" class="flexible-main"></div>
+            </section>
+
+  
+            <!--LEARNING AND DEVELOPMENT-->
+            <section>
+            <div id="learningContent" class="learning-main"> </div>
+            </section>
+
+
+
+            <!--RECRUITMENT PROCESS-->
+            <div id="recruitmentContent" class="recruitment-main">
+
+                <div class="recruitment-hero">
+
+                    <h1>Ready to Apply to Almighty Genesis India?</h1>
+
+                    <p class="hero-tagline">
+                        We’re excited that you’re considering joining our team. Whether you’re an experienced professional looking for your next challenge or a recent graduate beginning your career journey, we’re here to guide you every step of the way. <br>
+                        We understand that the hiring process can be both exciting and overwhelming. That’s why we strive to make the experience as smooth and straightforward as possible, helping you put your best foot forward from the very beginning.
+
+                    </p>
+
+                </div>
+
+                <div class="recruitment-box">
+
+                    <h2>How to Apply for Almighty Genesis India Jobs</h2>
+
+                    <p> Our recruitment process follows a clear and structured approach, ensuring transparency at every stage. Below are the key steps involved in becoming part of the Almighty Genesis India team:
+
+                </div>
+
+                <h2 class="process-heading">
+                    Your Application, Step by Step...!
+                </h2>
+
+                <div class="process-line">
+
+                    <div class="step-card">
+                        <span>Step-1</span>
+                        <h3> The Application Process</h3>
+                        <p>
+                            Browse our current openings and submit your application through our careers portal.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <span>Step-2</span>
+                        <h3>Screening & Position Mapping</h3>
+                        <p>
+                            Our recruitment team reviews your profile and matches your skills, experience, and career aspirations with suitable opportunities.
+                        </p>
+                    </div>
+
+                    <div class="step-card">
+                        <span>Step-3</span>
+                        <h3> The Interview Process</h3>
+                        <p>
+                            Qualified candidates are invited to participate in interviews designed to assess technical expertise, problem-solving abilities, and cultural fit.
+                        </p>
+                    </div>
+
+                   <div class="step-card">
+                        <span>Step-4</span>
+                        <h3> Onboarding & Placement</h3>
+                        <p>
+                            Successful candidates receive an offer and begin a structured onboarding process to help them transition smoothly into their new role.
+                        </p>
+                    </div>
+
+                </div>
+
+                <div class="recruitment-final">
+
+                    <h1>
+                        ❝We look forward to learning more about you and helping you take the next step in your professional journey with Almighty Genesis India. ❞
+                    </h1>
+
+                </div>
+
+            </div>
+ 
+            <!--CONTENT PAGES FOOTER-->
+            <footer class="mini-footer">
+
+                <div class="mini-footer-left">
+
+                   <img src="logo.png" alt="Logo">
+
+                    <h3 class="company-footer-name">
+                        <span class="almighty">ALMIGHTY</span>
+                        <span class="genesis">GENESIS</span>
+                    </h3>
+
+                </div>
+
+                <div class="mini-footer-center">
+
+                    <p>© 2026 Almighty Genesis. All Rights Reserved.</p>
+
+                </div>
+
+                <div class="mini-footer-right">
+
+                    <h4>Follow Us</h4>
+
+                    <div class="mini-social">
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+        </section>
+
+        
+
+        <!-- CONTACT PAGE OVERLAY -->
+        <section id="contactPage" class="contact-page">
+
+            <div class="page-scroll-content">
+
+            <!--VIDEO-->
+            <video autoplay muted loop playsinline class="contact-video">
+            <source src="contact.mp4" type="video/mp4">
+            </video>   
+
+            <!-- DARK OVERLAY -->
+            <div class="contact-overlay"></div>
+
+            <!-- CONTENT -->
+            <div class="contact-text">
+
+                <h1> CONTACT US</h1>
+                <p> Let's build something great together</p>
+
+                <!-- GLASS BOX -->
+                <div class="contact-box">
+
+                    <!-- LEFT SIDE -->
+                    <div class="contact-left">
+                        <h2>Get In Touch....</h2>
+
+                    </div>
+
+                    <!-- RIGHT SIDE FORM -->
+                    <form class="contact-right"
+                    action="https://formsubmit.co/githubgenesis@gmail.com" method="POST">
+
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="text" name="subject" placeholder="Subject" required>
+                        <textarea name="message" placeholder="Your Message" required></textarea>
+
+                        <input type="hidden" name="_captcha" value="false">
+
+                        <input type="hidden" name="_subject" value="New Contact Form Message">
+
+                        <input type="hidden" name="_next" value="file:///C:/Users/almig/OneDrive/Desktop/my-website/index.html">
+
+                        <button type="submit">Send Message</button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="get-in-touch-section">
+
+                <div class="get-left">
+                    Reach Out Us...!
+                </div>
+
+                <div class="get-right">
+                    Partner with us and discover how our BPO solutions can transform your business operations and accelerate growth. <br>
+                    Looking for a Change, Contact us Immediately.
+                </div>
+            </div>
+
+            <!--OUR PRESENCE-->
+            <div class="company-map-section">
+
+                <h2>OUR PRESENCE</h2>
+                <P>Expanding opportunities across India</P>
+
+                <div id="companyMap"></div>
+
+            </div>
+
+            </div>
+
+            <!--CONTACT FOOTER-->
+            <footer class="mini-footer">
+
+                <div class="mini-footer-left">
+
+                   <img src="logo.png" alt="Logo">
+
+                    <h3 class="company-footer-name">
+                        <span class="almighty">ALMIGHTY</span>
+                        <span class="genesis">GENESIS</span>
+                    </h3>
+
+                </div>
+
+                <div class="mini-footer-center">
+
+                    <p>© 2026 Almighty Genesis. All Rights Reserved.</p>
+
+                </div>
+
+                <div class="mini-footer-right">
+
+                    <h4>Follow Us</h4>
+
+                    <div class="mini-social">
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+
+        </section>
+
+
+
+        <script src="script.js"></script>
+
+        <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+
+        <!-- BUSINESS MODEL PAGE -->
+
+        <section id="businessModelPage" class="business-model-page">
+          
+            <div class="page-scroll-content">
+
+            <video autoplay muted loop playsinline class="business-video">
+                <source src="work.mp4" type="video/mp4">
+            </video>
+
+            <div class="business-overlay"></div>
+
+            <div class="business-content">
+
+            <div class="business-top">
+
+                <h3>...Our Story</h3>
+
+                <h1>
+                    Turning Ambition Into Employment
+                </h1>
+
+                <p>
+                    Every year, thousands of graduates walk out of campus drives without an offer. We built our entire model around them — and we've been changing that story since 2023.
+                </p>
+
+            </div>
+    
+
+            <div class="business-line"></div>
+
+                <div class="business-stats">
+
+                    <div class="stat-box">
+                        <h2>4000+</h2>
+                        <p>Career launched since 2023</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h2>70%</h2>
+                        <p>Of our graduates land their first real job within Training period.</p>
+                    </div>
+
+                    <div class="stat-box">
+                        <h2>100%</h2>
+                        <p>Placement support — we stay with you until your career is truly off the ground</p>
+                    </div>
+
+                </div>
+
+                <div class="business-middle">
+
+                    <h1>BUSINESS MODEL</h1>
+
+                    <h2>We saw what everyone else ignored.</h2>
+
+                    <p>
+
+                        Campus drives bring thousands of hopeful graduates. MNCs select a handful. The rest go home with nothing — or worse, settle for basic pay a month with no clear path forward. Even experienced professionals rarely cross High paying jobs. 
+
+                    </p>
+
+                </div>
+
+                <div class="business-question">
+
+                    <h2>
+                       What if we built for them?
+                    </h2>
+
+                    <h3>The Reality</h3>
+
+                    <p>
+                        In today's job market, AI is reshaping every industry. Entry-level graduates are entering the workforce without the technical skills, business acumen, or communication confidence that employers actually demand. Traditional hiring selects the top 30% — and ignores everyone else.
+                    </p>
+
+                    <h3>Our Answer</h3>
+
+                    <p>
+                        We don't compete for the top 30%. We invest in the other 70% — the majority who are talented, overlooked, and one right opportunity away from a career that actually reflects their potential.
+                    </p>
+
+                </div>
+
+                <div class="business-end-section">
+
+                    <div class="business-end-item">
+                        <h2>How we operate:<br>
+                            For Graduates
+                        </h2>
+                        <p>
+                            We identify driven individuals, build their skills across technical, business, and communication domains, and connect them to real employment that reflects their true potential.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+            </div>
+
+            <!--BUSINESS MODEL FOOTER-->
+            <footer class="mini-footer">
+
+                <div class="mini-footer-left">
+
+                   <img src="logo.png" alt="Logo">
+
+                    <h3 class="company-footer-name">
+                        <span class="almighty">ALMIGHTY</span>
+                        <span class="genesis">GENESIS</span>
+                    </h3>
+
+                </div>
+
+                <div class="mini-footer-center">
+
+                    <p>© 2026 Almighty Genesis. All Rights Reserved.</p>
+
+                </div>
+
+                <div class="mini-footer-right">
+
+                    <h4>Follow Us</h4>
+
+                    <div class="mini-social">
+
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+
+                    </div>
+
+                </div>
+
+            </footer>
+
+        </section>
+       
+  
+    </body> 
+
+</html>
